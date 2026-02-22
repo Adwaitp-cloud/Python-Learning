@@ -82,7 +82,69 @@ print(result)
 
 def calculate_area(height,width):
     area = height * width
+    area = area * 1.05
     return area
 
 room_area = calculate_area(12 ,10)
 print(f"Room size: {room_area} sq ft")
+
+
+def double(number):
+    return number * 2
+
+# Store in variable 
+result = double(5)
+
+# Use in expressions
+total = double(5) + double(3)
+
+# Pass to other functions
+print(double(10))
+
+# Use in conditions
+if double(7) > 10:
+    print("Big number!")
+
+
+if double(3) < 10:
+    print("Small number!") 
+
+
+def simple_function():
+    numbers = [1, 2, 3, 4, 5]
+    first_num = numbers[0]
+    last_num = numbers[-1]
+    return first_num, last_num
+
+f, l = simple_function()
+
+print(f)
+print(l)
+
+
+
+def get_min_max(numbers):
+    return min(numbers), max(numbers)
+
+minimum, maximum = get_min_max([5, 2, 8, 1, 9])
+print(f"Min: {minimum}, Max: {maximum}")
+
+result = get_min_max([34,65,4,12,785,1,2345,4554,4656,546])
+print(result)
+
+
+def greet(name):
+    print(f"Hello, {name}!")
+    # No return statement
+
+result = greet("Adwait")  # Prints: Hello, Adwait!
+print(result)  # None
+
+
+def greet(name):
+    return f"Hello, {name}!"
+    # With return statement
+
+result = greet("Adwait") # Stores the value
+print(result)  # Hello, Adwait!
+
