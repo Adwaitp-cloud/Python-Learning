@@ -39,3 +39,6 @@ print(current_dir)
 import random as ran
 number = ran.randint(1, 10)
 choice = ran.choice(["apple", "banana", "orange"])
+
+
+import pandas as pd
