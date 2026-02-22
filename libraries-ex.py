@@ -26,3 +26,16 @@ choice = random.choice(["apple", "banana", "orange"])
 import datetime
 today = datetime.date.today()
 print(today)
+
+# the os library
+
+import os
+current_dir = os.getcwd()
+print(current_dir)
+
+
+# import with as
+
+import random as ran
+number = ran.randint(1, 10)
+choice = ran.choice(["apple", "banana", "orange"])
