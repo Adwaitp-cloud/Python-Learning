@@ -148,3 +148,9 @@ def greet(name):
 result = greet("Adwait") # Stores the value
 print(result)  # Hello, Adwait!
 
+def tables (number):
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+
+table_number = int(input("Enter a number to see its multiplication table: "))
+tables(table_number)
