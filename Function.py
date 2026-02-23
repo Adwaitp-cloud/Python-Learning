@@ -27,7 +27,7 @@ def check_weather(temperature):
         print("The weather is normal")
 
 
-temperature = int(input("Enter the temperature"))
+temperature = int(input("Enter the temperature: "))
 check_weather(temperature)
 
 
