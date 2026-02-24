@@ -7,3 +7,15 @@ import requests
 # Download a web page
 response = requests.get("https://api.github.com")
 print(response.status_code)  # Should print 200
+
+# Basic of file handling moodels read "r", write "w", append "a", create "x"
+
+f = open("hello.txt", "x")
+f = open("hello.txt", "r")
+print(f.readline())
+print(f.readline())
+f = open("hello.txt", "a")
+f.write("\nThis is line was added by using the append model.\n")
+f = open("hello.txt", "r")
+print(f.read())
+f.close()
