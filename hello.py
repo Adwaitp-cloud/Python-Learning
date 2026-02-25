@@ -19,3 +19,10 @@ f.write("\nThis is line was added by using the append model.\n")
 f = open("hello.txt", "r")
 print(f.read())
 f.close()
+
+
+
+#1D Array
+
+import numpy as np 
+a = np.array([1,2,3])
