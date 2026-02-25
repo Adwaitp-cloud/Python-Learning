@@ -22,8 +22,15 @@ f.close()
 
 
 
-#1D Array
+# 1D Array
 
 import numpy as np 
 a = np.array([1,2,3])
+print(a)
+
+
+# 2D Array
+
+import numpy as np 
+a = np.array([[1,2,3],[4,5,6]])
 print(a)
