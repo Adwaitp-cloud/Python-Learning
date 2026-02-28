@@ -153,4 +153,3 @@ def tables (number):
         print(f"{number} x {i} = {number * i}")
 
 table_number = int(input("Enter a number to see its multiplication table: "))
-tables(table_number)
