@@ -1,3 +1,5 @@
+import pandas as pd
+
 import requests
 
 # We need coordinates to get weather data
@@ -37,3 +39,18 @@ print(f"London: {london_temp}°C")
 print(f"Tokyo: {tokyo_temp}°C")
 print(f"Nagpur:{nagpur_temp}°C")
 print(f"Boisar:{boisar_temp}°C")
+
+df = pd.read_csv('data/paris_weather.csv')
+print(df)
+
+df = pd.read_excel('../Python-Projects/sales-analysis/output/sales_data.xlsx')
+print(df)
+
+df = pd.read_json('../Python-Projects/sales-analysis/output/sales_data.json')
+print(df)
+
+df = pd.read_csv('../Python-Projects/sales-analysis/output/sales_with_totals.csv')
+print(df)
+
+df = open('hello.txt', 'r')
+print(df.read())
