@@ -34,3 +34,18 @@ print(a)
 import numpy as np 
 a = np.array([[1,2,3],[4,5,6]])
 print(a)
+
+
+try:
+    # Read a number from a file
+    with open('hello.txt', 'r') as f:
+        text = f.read()
+    number = int(text)
+    result = 100 / number
+    print(f"Result: {result}")
+except FileNotFoundError:
+    print("Could not find number.txt")
+except ValueError:
+    print("File doesn't contain a valid number")
+except ZeroDivisionError:
+    print("Cannot divide by zero")
