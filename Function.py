@@ -17,19 +17,11 @@ say_goodbye()
 say_goodbye()
 say_goodbye()
 
-
-def check_weather(temperature):
-    if temperature > 30:
-        print("The weather is really hot!!")
-    elif temperature < 18:
-        print("The weather is cold!")
-    else:
-        print("The weather is normal")
-
+from helpers import check_weather
 
 temperature = int(input("Enter the temperature: "))
-check_weather(temperature)
-
+weather = check_weather(temperature)
+print(weather)
 
 def greet(first_name,last_name):
      print(f"Hello, {first_name} {last_name}")
@@ -56,22 +48,10 @@ def calculate_total(price, tax_rate, discount):
 calculate_total(100, 0.08, 10)  # $98
 
 
+from helpers import calculate_total
 
-discount=10  # Global Variable
-
-def calculate_total(price):
-     # Default values
-     tax_rate=0.08  # local variables
-
-     # Calculation 
-     tax=price * tax_rate
-     final_price=price + tax - discount
-
-     # Print the final  price
-     print(f"Total: ${final_price}")
-
-calculate_total(100)
-
+total = calculate_total(100)
+print(total)
 # function using return statement
 
 def add_return (a ,b):
