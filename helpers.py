@@ -1,3 +1,4 @@
+
 def check_weather(temp):
     if temp > 30 :
         return "The weather is really hot!!"
