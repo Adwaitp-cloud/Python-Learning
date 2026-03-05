@@ -52,5 +52,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 
 # Save the plot
-plt.savefig('weather_chart.png')
+plt.savefig('output/weather_chart.png')
+
 plt.show()
+df.to_csv('output/Paris_temperature.csv',index=False)
